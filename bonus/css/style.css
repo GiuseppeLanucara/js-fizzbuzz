@@ -7,21 +7,21 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    background-color: burlywood;
+    background-color: lightblue;
     font-size: 1.5rem;
 }
 
 .fizz{
-    background-color: blue;
+    background-color: rgb(160, 127, 133);
     color: white;
 }
 
 .buzz{
-    background-color: red;
+    background-color: rgb(83, 64, 64);
     color: white;
 }
 
 .fizz-buzz{
-    background-color: green;
+    background-color: rgb(38, 46, 38);
     color: white;
 }
