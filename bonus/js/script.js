@@ -8,12 +8,10 @@
 
 // **BONUS 2:**
 //  Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
-
-
-let numbers = document.getElementById("container") 
+ 
 
 for (let i = 1; i <= 100; i++ ) {
-
+   
     //SE il numero (i) è multiplo di 3 AND multiplo di 5 stampa "FizzBuzz"
     if((i % 3 == 0) && (i % 5 == 0)){
         // console.log("FizzBuzz");
