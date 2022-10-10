@@ -9,24 +9,20 @@
 // **BONUS 2:**
 //  Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
  
-
+//ciclo FOR 
 for (let i = 1; i <= 100; i++ ) {
-   
+    const numeroContenuto = document.getElementById("container").innerHTML;
     //SE il numero (i) è multiplo di 3 AND multiplo di 5 stampa "FizzBuzz"
     if((i % 3 == 0) && (i % 5 == 0)){
-        // console.log("FizzBuzz");
-        numbers.append("FizzBuzz")
+        document.getElementById("container").innerHTML = numeroContenuto + '<div class="fizz-buzz">FizzBuzz</div>';
     //ALTRIMENTI SE il numero (i) è multiplo solo di 3 stampa "Fizz"    
     } else if(i % 3 == 0){
-        // console.log("Fizz");
-        numbers.append("Fizz")
+        document.getElementById("container").innerHTML = numeroContenuto + '<div class="fizz">Fizz</div>';
     //ALTRIMENTI SE il numero (i) è multiplo solo di 5 stampa "Buzz"    
     } else if(i % 5 == 0){
-        // console.log("Buzz");
-        numbers.append("Buzz")
+        document.getElementById("container").innerHTML = numeroContenuto + '<div class="Buzz">Buzz</div>';
     //ALTRIMENTI non è multiplo e stampa i (numero)    
     } else {
-        // console.log(i);
-        numbers.append(i);
+        document.getElementById("container").innerHTML = numeroContenuto + '<div>' + i +'<div>';
     }
 }
