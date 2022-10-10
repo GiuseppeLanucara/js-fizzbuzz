@@ -11,18 +11,18 @@
  
 //ciclo FOR 
 for (let i = 1; i <= 100; i++ ) {
-    const numeroContenuto = document.getElementById("container").innerHTML;
+    const numeroContenuto = document.getElementById("row").innerHTML;
     //SE il numero (i) è multiplo di 3 AND multiplo di 5 stampa "FizzBuzz"
     if((i % 3 == 0) && (i % 5 == 0)){
-        document.getElementById("container").innerHTML = numeroContenuto + '<div class="fizz-buzz">FizzBuzz</div>';
+        document.getElementById("row").innerHTML = numeroContenuto + '<div class="fizz-buzz">FizzBuzz</div>';
     //ALTRIMENTI SE il numero (i) è multiplo solo di 3 stampa "Fizz"    
     } else if(i % 3 == 0){
-        document.getElementById("container").innerHTML = numeroContenuto + '<div class="fizz">Fizz</div>';
+        document.getElementById("row").innerHTML = numeroContenuto + '<div class="fizz">Fizz</div>';
     //ALTRIMENTI SE il numero (i) è multiplo solo di 5 stampa "Buzz"    
     } else if(i % 5 == 0){
-        document.getElementById("container").innerHTML = numeroContenuto + '<div class="Buzz">Buzz</div>';
+        document.getElementById("row").innerHTML = numeroContenuto + '<div class="Buzz">Buzz</div>';
     //ALTRIMENTI non è multiplo e stampa i (numero)    
     } else {
-        document.getElementById("container").innerHTML = numeroContenuto + '<div>' + i +'<div>';
+        document.getElementById("row").innerHTML = numeroContenuto + '<div>' + i +'<div>';
     }
 }
